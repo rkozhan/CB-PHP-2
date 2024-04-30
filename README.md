@@ -1,52 +1,26 @@
-##Ziel:  
+## Ziel:
 
-  
+Entwickle ein kleines Kundenverwaltungssystem für ein KMU (Klein- und Mittelunternehmen), das Überblick über seine KundInnendaten erhalten möchte. Die eingetragenen KundInnen sollen in der Datenbank abgespeichert werden, man muss die Daten bearbeiten und sich eine Übersicht der Einträge anzeigen lassen können. Nutze für die Verbindung zur Datenbank PDO.
 
-Entwickle ein kleines Kundenverwaltungssystem für ein KMU (Klein- und Mittelunternehmen), das Überblick über seine KundInnendaten erhalten möchte.  
+## Anforderungen:
 
-Die eingetragenen KundInnen sollen in der Datenbank abgespeichert werden, man muss die Daten bearbeiten und sich eine Übersicht der Einträge anzeigen lassen können.  
+Die Tabellen sollen folgendermaßen aussehen:
 
-Nutze für die Verbindung zur Datenbank PDO.  
+- **users**: user_id, name, email, password
+- **clients**: company_id, company_name, contact_person, phone, adress, created_by (welcher User hat den Eintrag erstellt), created_at (Erstelldatum), edited_at (Bearbeitungsdatum)
 
-  
+Relation: users 1 – n clients
 
-##Anforderungen:  
+## Features:
 
-  
+- User-Registrierung
+- User-LogIn
+- Anlegen von NeukundInnen über ein Kontaktformular
+- Übersicht aller KundInnen
+- Möglichkeit jeden Eintrag zu bearbeiten & zu löschen
+- Eingeloggte User können alle Einträge im System sehen
+- Eingeloggte User können nur die Einträge bearbeiten bzw. löschen, die sie auch selbst erstellt haben. (Tipp: Das könnt ihr mit einer Session lösen).
 
-Die Tabellen sollen folgendermaßen aussehen:  
+## Benutzeroberfläche:
 
-users: user_id, name, email, password  
-
-clients: company_id, company_name, contact_person, phone, adress, created_by (welcher User hat den Eintrag erstellt), created_at(Erstelldatum), edited_at(Bearbeitungsdatum)  
-
-Relation: users 1 – n clients  
-  
-
-##Features:  
-
-User-Registrierung  
-
-User-LogIn  
-
-Anlegen von NeukundInnen über ein Kontaktformular  
-
-Übersicht aller KundInnen  
-
-Möglichkeit jeden Eintrag zu bearbeiten & zu löschen  
-
-Eingeloggte User können alle Einträge im System sehen  
-
-ABER: Eingeloggte User können nur die Einträge bearbeiten bzw. löschen, die sie auch selbst erstellt haben. (Tipp: Das könnt ihr mit einer Session lösen).  
-
-  
-
-##Benutzeroberfläche  
-
-Für die Benutzeroberfläche (GUI) verwendet bitte eines der CSS Frameworks aus dem Modul CSS Frameworks (Ja, so könnt ihr beide Kompetenzen miteinander abschließen 😉).   
-
-Gestaltet das Kundenverwaltungssystem benutzerfreundlich! (gutes Userfeedback bei den Kontaktformularen, deutliche Hinweise, wenn etwas nicht geklappt hat, etc.)  
-
-Achtet beim Styling auf gute Lesbarkeit, Farben, die nicht ablenken etc.  
-
-Denkt auch an die Responsive Gestaltung des Tools & passt euer CSS dementsprechend an.  
+Für die Benutzeroberfläche (GUI) verwendet bitte eines der CSS Frameworks aus dem Modul CSS Frameworks (Ja, so könnt ihr beide Kompetenzen miteinander abschließen 😉). Gestaltet das Kundenverwaltungssystem benutzerfreundlich! (gutes Userfeedback bei den Kontaktformularen, deutliche Hinweise, wenn etwas nicht geklappt hat, etc.) Achtet beim Styling auf gute Lesbarkeit, Farben, die nicht ablenken etc. Denkt auch an die Responsive Gestaltung des Tools & passt euer CSS dementsprechend an.
