@@ -1,3 +1,5 @@
+# PHP 2 Customer Management System Kompetenzcheck 
+
 ## Ziel:
 
 Entwickle ein kleines Kundenverwaltungssystem für ein KMU (Klein- und Mittelunternehmen), das Überblick über seine KundInnendaten erhalten möchte. Die eingetragenen KundInnen sollen in der Datenbank abgespeichert werden, man muss die Daten bearbeiten und sich eine Übersicht der Einträge anzeigen lassen können. Nutze für die Verbindung zur Datenbank PDO.
